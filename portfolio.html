@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <!-- Сначала шрифт, потом нормализатор -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!-- Потом ваши стили -->
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<body class="page">
+    <!--шапка сайта-->
+    <header class="header">
+        <div class="container-section nav-section">
+            <a href="/index.html" lang="en" class="logo"><span class="logo-span">Web</span>Studio</a>
+            <nav class="nav-list">
+                <ul class="list site-nav">
+                    <li class=" nav-item"><a href="./index.html" class="link animation">Студия</a></li>
+                    <li class=" nav-item"><a href="./portfolio.html" class="link animation  current">Портфолио</a></li>
+                    <li class=" nav-item"><a href="#" class="link animation">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="list auth-nav">
+                <li class=" auth-item">
+                    <a href="mailto:info@devstudio.com" target="_blank" class="link animation ">
+                        <svg class="nav-under-icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>info&#64devstudio.com</a>
+                </li>
+                <li class=" auth-item">
+                    <a href="tel:+380961111111" target="_blank" class="link animation">
+                        <svg class="nav-under-icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- job-options -->
+        <section class="job section">
+            <!-- спрятать -->
+            <h1 class="visually-hidden">job-options</h1>
+            <div class="job container-section">
+                <ul class="job-list list ">
+                    <li class="job-icon"><button type="button"
+                            class="button job-option port-btn-animation ">Все</button></li>
+                    <li class="job-icon"><button type="button"
+                            class="button job-option animation port-btn-animation">Веб-сайты</button>
+                    </li>
+                    <li class="job-icon"><button type="button"
+                            class="button job-option animation port-btn-animation">Приложения</button>
+                    </li>
+                    <li class="job-icon"><button type="button"
+                            class="button job-option animation port-btn-animation">Дизайн</button>
+                    </li>
+                    <li class="job-icon"><button type="button"
+                            class="button job-option animation port-btn-animation">Маркетинг</button>
+                    </li>
+                </ul>
+                <!-- развернутый список -->
+                <ul class="job-full list ">
+                    <li class="job-full-icon">
+                        <a class="job-list-link" href="#">
+                            <div class="job-action-thumb">
+                                <img class="job-action-picture" src="./images/portfolio/9.jpg" alt="Технокряк"
+                                    width="370" height="294">
+                                <div class="job-action-product">
+                                    <p class="job-action-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="job-full-undertext job-before-fu">
+                                <h2 class="job-list-title">Технокряк</h2>
+                                <p class="job-list-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="job-full-icon">
+                        <a class="job-list-link" href="#">
+                            <div class="job-action-thumb">
+                                <img class="job-action-picture" src="./images/portfolio/1.jpg" alt="Технокряк"
+                                    width="370" height="294">
+                                <div class="job-action-product">
+                                    <p class="job-action-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="job-full-undertext">
+                                <h2 class="job-list-title">Постер New Orlean vs Golden Star</h2>
+                                <p class="job-list-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="job-full-icon">
+                        <a class="job-list-link" href="#">
+                            <div class="job-action-thumb">
+                                <img class="job-action-picture" src="./images/portfolio/2.jpg" alt="Технокряк"
+                                    width="370" height="294">
+                                <div class="job-action-product">
+                                    <p class="job-action-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="job-full-undertext">
+                                <h2 class="job-list-title">Ресторан Seafood</h2>
+                                <p class="job-list-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="job-full-icon">
+                        <a class="job-list-link" href="#">
+                            <div class="job-action-thumb">
+                                <img class="job-action-picture" src="./images/portfolio/3.jpg" alt="Технокряк"
+                                    width="370" height="294">
+                                <div class="job-action-product">
+                                    <p class="job-action-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="job-full-undertext">
+                                <h2 class="job-list-title">Проект Prime</h2>
+                                <p class="job-list-text">Маркетинг</p>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="job-full-icon">
+                        <a class="job-list-link" href="#">
+                            <div class="job-action-thumb">
+                                <img class="job-action-picture" src="./images/portfolio/4.jpg" alt="Технокряк"
+                                    width="370" height="294">
+                                <div class="job-action-product">
+                                    <span class="job-action-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="job-full-undertext">
+                                <h2 class="job-list-title">Проект Boxes</h2>
+                                <p class="job-list-text">Приложение</p>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="job-full-icon">
+                        <a class="job-list-link" href="#">
+                            <div class="job-action-thumb">
+                                <img class="job-action-picture" src="./images/portfolio/5.jpg" alt="Технокряк"
+                                    width="370" height="294">
+                                <div class="job-action-product">
+                                    <p class="job-action-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="job-full-undertext">
+                                <h2 class="job-list-title">Inspiration has no Borders</h2>
+                                <p class="job-list-text">Веб-сайт</p>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="job-full-icon">
+                        <a class="job-list-link" href="#">
+                            <div class="job-action-thumb">
+                                <img class="job-action-picture" src="./images/portfolio/6.jpg" alt="Технокряк"
+                                    width="370" height="294">
+                                <div class="job-action-product">
+                                    <p class="job-action-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="job-full-undertext">
+                                <h2 class="job-list-title">Издание Limited Edition</h2>
+                                <p class="job-list-text">Дизайн</p>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="job-full-icon">
+                        <a class="job-list-link" href="#">
+                            <div class="job-action-thumb">
+                                <img class="job-action-picture" src="./images/portfolio/7.jpg" alt="Технокряк"
+                                    width="370" height="294">
+                                <div class="job-action-product">
+                                    <p class="job-action-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="job-full-undertext">
+                                <h2 class="job-list-title">Проект LAB</h2>
+                                <p class="job-list-text">Маркетинг</p>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="job-full-icon">
+                        <a class="job-list-link" href="#">
+                            <div class="job-action-thumb">
+                                <img class="job-action-picture" src="./images/portfolio/8.jpg" alt="Технокряк"
+                                    width="370" height="294">
+                                <div class="job-action-product">
+                                    <p class="job-action-text">
+                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить
+                                        исчерпывающие сведения о компании или частном лице.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="job-full-undertext">
+                                <h2 class="job-list-title">Growing Business</h2>
+                                <p class="job-list-text">Приложение</p>
+                            </div>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-section footer-section">
+            <div class="footer-adress-group">
+                <a href="/index.html" lang="en" class="footer-logo"><span class="logo-span">Web</span>Studio</a>
+                <address class="footer-adress">
+                    <ul class="list">
+                        <li class="footer-item"><a href="https://cutt.ly/HHQWCcf" rel="noopener noreferrer"
+                                target="_blank" class="map adress">г.
+                                Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="footer-item"><a href="mailto:info@devstudio.com" target="_blank" lang="en"
+                                class="adress">
+                                info&#64devstudio.com
+                            </a></li>
+                        <li class="footer-item"><a href="tel:+380961111111" target="_blank" class="adress"> +38 096 111
+                                11
+                                11 </a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-socials-group">
+                <h2 class="footer-title">присоединяйтесь</h2>
+                <ul class="socials-list list">
+                    <li class="socials-item">
+                        <a class="socials-link footer-link bg-animation" href="">
+                            <svg class="socials-icon footer-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a class="socials-link footer-link bg-animation" href="">
+                            <svg class="socials-icon footer-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a class="socials-link footer-link bg-animation" href="">
+                            <svg class="socials-icon footer-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a class="socials-link footer-link bg-animation" href="">
+                            <svg class="socials-icon footer-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="action-form">
+                <div class="action-form-field">
+                    <label class="action-form-label" for="mail">Подпишитесь на рассылку</label>
+                    <input class="action-form-mail" type="email" name="mail" id="mail" placeholder="E-mail">
+                </div>
+                <button class="action-form-btn bg-animation" type="submit">Подписаться</button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
