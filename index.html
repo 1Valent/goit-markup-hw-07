@@ -18,28 +18,25 @@
 <body class="page">
     <!--шапка сайта-->
     <header class="header">
-        <div class="header__field">
-            <a class="header__list" href="/index.html" lang="en">
-                <span class="header__logo">Web</span>Studio</a>
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class=" navigation__item"><a class="navigation__link navigation__link--current"
-                            href="./index.html">Студия</a></li>
-                    <li class=" navigation__item"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
-                    <li class=" navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+        <div class="container-section nav-section">
+            <a href="/index.html" lang="en" class="logo"><span class="logo-span">Web</span>Studio</a>
+            <nav class="nav-list">
+                <ul class="list site-nav">
+                    <li class=" nav-item"><a href="./index.html" class="link animation current">Студия</a></li>
+                    <li class=" nav-item"><a href="./portfolio.html" class="link animation">Портфолио</a></li>
+                    <li class=" nav-item"><a href="#" class="link animation">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="contacts">
-                <li class=" contacts__item">
-                    <a class="contacts__link contacts__link--animation" href="mailto:info@devstudio.com"
-                        target="_blank">
-                        <svg class="contacts__icon" width="16" height="12">
+            <ul class="list auth-nav">
+                <li class=" auth-item">
+                    <a href="mailto:info@devstudio.com" target="_blank" class="link animation">
+                        <svg class="nav-under-icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>info&#64devstudio.com</a>
                 </li>
-                <li class=" contacts__item">
-                    <a class="contacts__link contacts__link--animation" href="tel:+380961111111" target="_blank">
-                        <svg class="contacts__icon" width="10" height="16">
+                <li class=" auth-item">
+                    <a href="tel:+380961111111" target="_blank" class="link animation">
+                        <svg class="nav-under-icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -49,9 +46,9 @@
     <main>
         <!--Герой -->
         <section class="hero">
-            <div class="container hero__container">
-                <h1 class="hero__title"> Эффективные решения для&nbsp;вашего бизнеса </h1>
-                <button class="hero__button hero__button--animation" type="button" data-modal-open>
+            <div class="container-section hero-section">
+                <h1 class="hero-title"> Эффективные решения для&nbsp;вашего бизнеса </h1>
+                <button type="button" class="hero-button button bg-animation" data-modal-open>
                     Заказать услугу
                 </button>
             </div>
