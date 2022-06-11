@@ -89,14 +89,7 @@ svg {
   transform: translateX(-50%);
   width: 100%;
   z-index: 1;
-  background-image: repeating-radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.4) 20px,
-    rgba(255, 255, 255, 0.3) 20px,
-    rgba(255, 255, 255, 0.3) 40px
-  );
-  /* background-color: rgba(255, 255, 255, 0.5); */
+  background: linear-gradient(to right, rgba(31, 28, 44, 0.9), rgba(146, 141, 171, 0.1));
 }
 .nav-section {
   display: flex;
@@ -187,7 +180,8 @@ svg {
 .nav-under-icon {
   display: block;
   margin-right: 10px;
-  fill: currentColor;
+  fill: var(--low-text-color);
+  transition: fill var(--transition-timing-function);
 }
 .auth-nav .link:hover .nav-under-icon,
 .auth-nav .link:focus .nav-under-icon {
@@ -206,10 +200,51 @@ svg {
   margin: 0 auto;
   padding: 200px 0;
   background-color: var(--hero-footer-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-img.jpg);
+  animation-name: changeBgGradient;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2000ms;
+  animation-direction: alternate;
+
   background-position: center;
   background-size: cover;
+}
+
+@keyframes changeBgGradient {
+  0% {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-img.jpg);
+  }
+
+  40% {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-img.jpg);
+  }
+
+  45% {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-img.jpg);
+  }
+
+  50% {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+      url(../images/hero-img.jpg);
+  }
+
+  55% {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(255, 255, 255, 0.1)),
+      url(../images/hero-img.jpg);
+  }
+
+  60% {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-img.jpg);
+  }
+
+  100% {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-img.jpg);
+  }
 }
 
 .hero-title {
@@ -224,12 +259,12 @@ svg {
   text-transform: uppercase;
   text-align: center;
 }
+
 .hero-button {
   display: flex;
   margin: 0 auto;
   text-align: center;
   position: relative;
-  overflow: hidden;
 
   letter-spacing: 0.06em;
   padding: 10px 32px;
@@ -245,7 +280,43 @@ svg {
   background-color: var(--button-hover);
 }
 
-.hero-button::before,
+.hero-button::before {
+  content: '';
+  margin: 3px 10px 0;
+
+  background-image: url(../images/modal-theme-icons/icon-send.svg);
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  transform: translate(0, 0) scale(1);
+  transition: transform var(--transition-timing-function);
+}
+
+.hero-button:hover::before,
+.hero-button:focus::before {
+  animation: changeIconPosition 2000ms ease;
+}
+
+@keyframes changeIconPosition {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(50px, -50px) scale(0.1);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translate(-50px, 50px) scale(2);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+/* .hero-button::before,
 .hero-button::after {
   content: '';
   display: inline-block;
@@ -278,7 +349,7 @@ svg {
 .hero-button:hover::after,
 .hero-button:focus::after {
   transform: translateY(-50%) rotateX(360deg);
-}
+} */
 /* advanteges */
 .advantages.section {
   padding-bottom: 0;
@@ -385,13 +456,42 @@ svg {
   display: flex;
 }
 .team-item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px; */
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.team-item-shadow {
+  width: 270px;
+  height: 428px;
+  position: relative;
+  z-index: 0;
+}
+
+.team-item-shadow:before,
+.team-item-shadow:after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: 20px;
+  left: 10px;
+  width: 50%;
+  top: 90%;
+  background-color: #212121;
+  max-width: 270px;
+  box-shadow: 0px 16px 10px rgba(0, 0, 0, 0.5);
+  transform: rotate(-3deg);
+}
+
+.team-item-shadow:after {
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
 .team-under-img {
   padding: 30px 0;
   background-color: var(--accent-color);
@@ -627,12 +727,40 @@ svg {
 .action-form-btn::after {
   content: '';
   display: inline-block;
-  background-image: url(../images/modal-theme-icons/icon-send.svg);
+
   width: 24px;
   height: 24px;
-  fill: var(--accent-color);
+  background-image: url(../images/modal-theme-icons/icon-send.svg);
   background-size: contain;
   margin-left: 10px;
+
+  transform: translate(0, 0) scale(1);
+  transition: transform var(--transition-timing-function);
+}
+
+.action-form-btn:hover::after,
+.action-form-btn:focus::after {
+  animation: changeIconPosition 2000ms ease;
+}
+
+@keyframes changeIconPosition {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(50px, -50px) scale(0.1);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translate(-50px, 50px) scale(2);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
 }
 /* backdrop */
 
@@ -734,8 +862,7 @@ svg {
 .form-field .form-input {
   height: 40px;
   margin: 0;
-  padding: 6px 10px;
-  padding-left: 40px;
+  padding: 6px 10px 6px 40px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -801,12 +928,13 @@ svg {
 
 .form-accept-icon {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  /* width: 15px;
+  height: 15px; */
   border: 2px solid var(--main-text-color);
   border-radius: 4px;
   margin-right: 7px;
   transition: var(--transition-timing-function);
+  transform: scale(1);
 }
 
 .form-checkbox {
@@ -820,18 +948,22 @@ svg {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-  /* display: block;
-  appearance: none;
-  position: absolute; */
 }
 
 .form-checkbox:checked + .form-accept-icon {
+  background-color: var(--accent-bgc);
+  border-color: transparent;
+  transform: scale(1.2);
+}
+
+/* .form-checkbox:checked + .form-accept-icon {
   background-image: url(../images/modal-theme-icons/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
   transform: scale(1.2);
-}
+  opacity: 1;
+} */
 
 .modal-btn {
   display: flex;
