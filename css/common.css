@@ -857,6 +857,8 @@ svg {
 
   letter-spacing: 0.01em;
   color: var(--low-text-color);
+
+  transition: var(--transition-timing-function);
 }
 
 .form-field .form-input {
@@ -870,6 +872,8 @@ svg {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
+
+  transition: var(--transition-timing-function);
 }
 
 .form-field .form-input:hover,
@@ -954,6 +958,18 @@ svg {
   background-color: var(--accent-bgc);
   border-color: transparent;
   transform: scale(1.2);
+}
+
+.form-field:focus-within .form-label {
+  color: #2196f3;
+}
+
+.form-input:not(:placeholder-shown):required:valid {
+  border-color: #4caf50;
+}
+
+.form-input:not(:placeholder-shown):required:invalid {
+  border-color: #f44336;
 }
 
 /* .form-checkbox:checked + .form-accept-icon {
