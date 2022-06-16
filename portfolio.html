@@ -17,25 +17,27 @@
 <body class="page">
     <!--шапка сайта-->
     <header class="header">
-        <div class="container-section nav-section">
-            <a href="/index.html" lang="en" class="logo"><span class="logo-span">Web</span>Studio</a>
-            <nav class="nav-list">
-                <ul class="list site-nav">
-                    <li class=" nav-item"><a href="./index.html" class="link animation">Студия</a></li>
-                    <li class=" nav-item"><a href="./portfolio.html" class="link animation  current">Портфолио</a></li>
-                    <li class=" nav-item"><a href="#" class="link animation">Контакты</a></li>
+        <div class="container header__container">
+            <a href="/index.html" lang="en" class="logo"><span class="logo__accent">Web</span>Studio</a>
+            <nav class="navigation">
+                <ul class="list navigation__list">
+                    <li class=" navigation__item"><a href="./index.html" class="navigation__link">Студия</a>
+                    </li>
+                    <li class=" navigation__item"><a href="./portfolio.html"
+                            class="navigation__link navigation__link--current">Портфолио</a></li>
+                    <li class=" navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="list auth-nav">
-                <li class=" auth-item">
-                    <a href="mailto:info@devstudio.com" target="_blank" class="link animation">
-                        <svg class="nav-under-icon" width="16" height="12">
+            <ul class="list contacts">
+                <li class=" contacts__item">
+                    <a href="mailto:info@devstudio.com" target="_blank" class="contacts__link ">
+                        <svg class="contacts__icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>info&#64devstudio.com</a>
                 </li>
-                <li class=" auth-item">
-                    <a href="tel:+380961111111" target="_blank" class="link animation">
-                        <svg class="nav-under-icon " width="10" height="16">
+                <li class=" contacts__item">
+                    <a href="tel:+380961111111" target="_blank" class="contacts__link ">
+                        <svg class="contacts__icon " width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -44,35 +46,35 @@
     </header>
     <main>
         <!-- job-options -->
-        <section class="job section">
+        <section class="work">
             <!-- спрятать -->
             <h1 class="visually-hidden">job-options</h1>
-            <div class="job container-section">
-                <ul class="job-list list ">
-                    <li class="job-icon"><button type="button"
-                            class="button job-option port-btn-animation ">Все</button></li>
-                    <li class="job-icon"><button type="button"
-                            class="button job-option animation port-btn-animation">Веб-сайты</button>
+            <div class="container">
+                <ul class="work-buttons">
+                    <li class="work-buttons__item"><button type="button"
+                            class="button work-buttons__examples">Все</button></li>
+                    <li class="work-buttons__item"><button type="button"
+                            class="button work-buttons__examples">Веб-сайты</button>
                     </li>
-                    <li class="job-icon"><button type="button"
-                            class="button job-option animation port-btn-animation">Приложения</button>
+                    <li class="work-buttons__item"><button type="button"
+                            class="button work-buttons__examples">Приложения</button>
                     </li>
-                    <li class="job-icon"><button type="button"
-                            class="button job-option animation port-btn-animation">Дизайн</button>
+                    <li class="work-buttons__item"><button type="button"
+                            class="button work-buttons__examples">Дизайн</button>
                     </li>
-                    <li class="job-icon"><button type="button"
-                            class="button job-option animation port-btn-animation">Маркетинг</button>
+                    <li class="work-buttons__item"><button type="button"
+                            class="button work-buttons__examples">Маркетинг</button>
                     </li>
                 </ul>
                 <!-- развернутый список -->
-                <ul class="job-full list ">
-                    <li class="job-full-icon">
-                        <a class="job-list-link" href="#">
-                            <div class="job-action-thumb">
-                                <img class="job-action-picture" src="./images/portfolio/9.jpg" alt="Технокряк"
-                                    width="370" height="294">
-                                <div class="job-action-product">
-                                    <p class="job-action-text">
+                <ul class="work-list">
+                    <li class="work-list__box">
+                        <a class="work-list__link" href="#">
+                            <div class="work-list__thumb">
+                                <img class="work-list__image" src="./images/portfolio/9.jpg" alt="Технокряк" width="370"
+                                    height="294">
+                                <div class="work-list__info">
+                                    <p class="work-list__info-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -80,19 +82,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="job-full-undertext job-before-fu">
-                                <h2 class="job-list-title">Технокряк</h2>
-                                <p class="job-list-text">Веб-сайт</p>
+                            <div class="work-list__description">
+                                <h2 class="work-list__title">Технокряк</h2>
+                                <p class="work-list__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="job-full-icon">
-                        <a class="job-list-link" href="#">
-                            <div class="job-action-thumb">
-                                <img class="job-action-picture" src="./images/portfolio/1.jpg" alt="Технокряк"
-                                    width="370" height="294">
-                                <div class="job-action-product">
-                                    <p class="job-action-text">
+                    <li class="work-list__box">
+                        <a class="work-list__link" href="#">
+                            <div class="work-list__thumb">
+                                <img class="work-list__image" src="./images/portfolio/1.jpg" alt="Технокряк" width="370"
+                                    height="294">
+                                <div class="work-list__info">
+                                    <p class="work-list__info-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -100,19 +102,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="job-full-undertext">
-                                <h2 class="job-list-title">Постер New Orlean vs Golden Star</h2>
-                                <p class="job-list-text">Дизайн</p>
+                            <div class="work-list__description">
+                                <h2 class="work-list__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="work-list__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="job-full-icon">
-                        <a class="job-list-link" href="#">
-                            <div class="job-action-thumb">
-                                <img class="job-action-picture" src="./images/portfolio/2.jpg" alt="Технокряк"
-                                    width="370" height="294">
-                                <div class="job-action-product">
-                                    <p class="job-action-text">
+                    <li class="work-list__box">
+                        <a class="work-list__link" href="#">
+                            <div class="work-list__thumb">
+                                <img class="work-list__image" src="./images/portfolio/2.jpg" alt="Технокряк" width="370"
+                                    height="294">
+                                <div class="work-list__info">
+                                    <p class="work-list__info-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -120,19 +122,19 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="job-full-undertext">
-                                <h2 class="job-list-title">Ресторан Seafood</h2>
-                                <p class="job-list-text">Приложение</p>
+                            <div class="work-list__description">
+                                <h2 class="work-list__title">Ресторан Seafood</h2>
+                                <p class="work-list__text">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="job-full-icon">
-                        <a class="job-list-link" href="#">
-                            <div class="job-action-thumb">
-                                <img class="job-action-picture" src="./images/portfolio/3.jpg" alt="Технокряк"
-                                    width="370" height="294">
-                                <div class="job-action-product">
-                                    <p class="job-action-text">
+                    <li class="work-list__box">
+                        <a class="work-list__link" href="#">
+                            <div class="work-list__thumb">
+                                <img class="work-list__image" src="./images/portfolio/3.jpg" alt="Технокряк" width="370"
+                                    height="294">
+                                <div class="work-list__info">
+                                    <p class="work-list__info-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -140,20 +142,20 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="job-full-undertext">
-                                <h2 class="job-list-title">Проект Prime</h2>
-                                <p class="job-list-text">Маркетинг</p>
+                            <div class="work-list__description">
+                                <h2 class="work-list__title">Проект Prime</h2>
+                                <p class="work-list__text">Маркетинг</p>
                             </div>
 
                         </a>
                     </li>
-                    <li class="job-full-icon">
-                        <a class="job-list-link" href="#">
-                            <div class="job-action-thumb">
-                                <img class="job-action-picture" src="./images/portfolio/4.jpg" alt="Технокряк"
-                                    width="370" height="294">
-                                <div class="job-action-product">
-                                    <span class="job-action-text">
+                    <li class="work-list__box">
+                        <a class="work-list__link" href="#">
+                            <div class="work-list__thumb">
+                                <img class="work-list__image" src="./images/portfolio/4.jpg" alt="Технокряк" width="370"
+                                    height="294">
+                                <div class="work-list__info">
+                                    <span class="work-list__info-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -161,20 +163,20 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="job-full-undertext">
-                                <h2 class="job-list-title">Проект Boxes</h2>
-                                <p class="job-list-text">Приложение</p>
+                            <div class="work-list__description">
+                                <h2 class="work-list__title">Проект Boxes</h2>
+                                <p class="work-list__text">Приложение</p>
                             </div>
 
                         </a>
                     </li>
-                    <li class="job-full-icon">
-                        <a class="job-list-link" href="#">
-                            <div class="job-action-thumb">
-                                <img class="job-action-picture" src="./images/portfolio/5.jpg" alt="Технокряк"
-                                    width="370" height="294">
-                                <div class="job-action-product">
-                                    <p class="job-action-text">
+                    <li class="work-list__box">
+                        <a class="work-list__link" href="#">
+                            <div class="work-list__thumb">
+                                <img class="work-list__image" src="./images/portfolio/5.jpg" alt="Технокряк" width="370"
+                                    height="294">
+                                <div class="work-list__info">
+                                    <p class="work-list__info-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -182,20 +184,20 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="job-full-undertext">
-                                <h2 class="job-list-title">Inspiration has no Borders</h2>
-                                <p class="job-list-text">Веб-сайт</p>
+                            <div class="work-list__description">
+                                <h2 class="work-list__title">Inspiration has no Borders</h2>
+                                <p class="work-list__text">Веб-сайт</p>
                             </div>
 
                         </a>
                     </li>
-                    <li class="job-full-icon">
-                        <a class="job-list-link" href="#">
-                            <div class="job-action-thumb">
-                                <img class="job-action-picture" src="./images/portfolio/6.jpg" alt="Технокряк"
-                                    width="370" height="294">
-                                <div class="job-action-product">
-                                    <p class="job-action-text">
+                    <li class="work-list__box">
+                        <a class="work-list__link" href="#">
+                            <div class="work-list__thumb">
+                                <img class="work-list__image" src="./images/portfolio/6.jpg" alt="Технокряк" width="370"
+                                    height="294">
+                                <div class="work-list__info">
+                                    <p class="work-list__info-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -203,20 +205,20 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="job-full-undertext">
-                                <h2 class="job-list-title">Издание Limited Edition</h2>
-                                <p class="job-list-text">Дизайн</p>
+                            <div class="work-list__description">
+                                <h2 class="work-list__title">Издание Limited Edition</h2>
+                                <p class="work-list__text">Дизайн</p>
                             </div>
 
                         </a>
                     </li>
-                    <li class="job-full-icon">
-                        <a class="job-list-link" href="#">
-                            <div class="job-action-thumb">
-                                <img class="job-action-picture" src="./images/portfolio/7.jpg" alt="Технокряк"
-                                    width="370" height="294">
-                                <div class="job-action-product">
-                                    <p class="job-action-text">
+                    <li class="work-list__box">
+                        <a class="work-list__link" href="#">
+                            <div class="work-list__thumb">
+                                <img class="work-list__image" src="./images/portfolio/7.jpg" alt="Технокряк" width="370"
+                                    height="294">
+                                <div class="work-list__info">
+                                    <p class="work-list__info-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -224,20 +226,20 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="job-full-undertext">
-                                <h2 class="job-list-title">Проект LAB</h2>
-                                <p class="job-list-text">Маркетинг</p>
+                            <div class="work-list__description">
+                                <h2 class="work-list__title">Проект LAB</h2>
+                                <p class="work-list__text">Маркетинг</p>
                             </div>
 
                         </a>
                     </li>
-                    <li class="job-full-icon">
-                        <a class="job-list-link" href="#">
-                            <div class="job-action-thumb">
-                                <img class="job-action-picture" src="./images/portfolio/8.jpg" alt="Технокряк"
-                                    width="370" height="294">
-                                <div class="job-action-product">
-                                    <p class="job-action-text">
+                    <li class="work-list__box">
+                        <a class="work-list__link" href="#">
+                            <div class="work-list__thumb">
+                                <img class="work-list__image" src="./images/portfolio/8.jpg" alt="Технокряк" width="370"
+                                    height="294">
+                                <div class="work-list__info">
+                                    <p class="work-list__info-text">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов.
                                         Все это позволит посетителю получить
@@ -245,9 +247,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="job-full-undertext">
-                                <h2 class="job-list-title">Growing Business</h2>
-                                <p class="job-list-text">Приложение</p>
+                            <div class="work-list__description">
+                                <h2 class="work-list__title">Growing Business</h2>
+                                <p class="work-list__text">Приложение</p>
                             </div>
 
                         </a>
@@ -257,66 +259,75 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container-section footer-section">
-            <div class="footer-adress-group">
-                <a href="/index.html" lang="en" class="footer-logo"><span class="logo-span">Web</span>Studio</a>
-                <address class="footer-adress">
+        <div class="container footer__container">
+            <div class="adress footer__adress ">
+                <a href="/index.html" lang="en" class="adress__logo"><span class="logo__accent">Web</span>Studio</a>
+                <address class="adress__list">
                     <ul class="list">
-                        <li class="footer-item"><a href="https://cutt.ly/HHQWCcf" rel="noopener noreferrer"
-                                target="_blank" class="map adress">г.
+                        <li class="adress__item"><a href="https://cutt.ly/HHQWCcf" rel="noopener noreferrer"
+                                target="_blank" class="adress adress__map">г.
                                 Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="footer-item"><a href="mailto:info@devstudio.com" target="_blank" lang="en"
+                        <li class="adress__item"><a href="mailto:info@devstudio.com" target="_blank" lang="en"
                                 class="adress">
                                 info&#64devstudio.com
                             </a></li>
-                        <li class="footer-item"><a href="tel:+380961111111" target="_blank" class="adress"> +38 096 111
+                        <li class="adress__item"><a href="tel:+380961111111" target="_blank" class="adress"> +38 096
+                                111
                                 11
                                 11 </a></li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-socials-group">
-                <h2 class="footer-title">присоединяйтесь</h2>
-                <ul class="socials-list list">
-                    <li class="socials-item">
-                        <a class="socials-link footer-link bg-animation" href="">
-                            <svg class="socials-icon footer-icon" width="20" height="20">
+            <div class="socials footer__socials">
+                <h2 class="socials__title">присоединяйтесь</h2>
+                <ul class=" list socials__list">
+                    <li class="socials__item">
+                        <a class="socials__link" href="">
+                            <svg class="socials__icon socials__icon--footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="socials-item">
-                        <a class="socials-link footer-link bg-animation" href="">
-                            <svg class="socials-icon footer-icon" width="20" height="20">
+                    <li class="socials__item">
+                        <a class="socials__link" href="">
+                            <svg class="socials__icon socials__icon--footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="socials-item">
-                        <a class="socials-link footer-link bg-animation" href="">
-                            <svg class="socials-icon footer-icon" width="20" height="20">
+                    <li class="socials__item">
+                        <a class="socials__link" href="">
+                            <svg class="socials__icon socials__icon--footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="socials-item">
-                        <a class="socials-link footer-link bg-animation" href="">
-                            <svg class="socials-icon footer-icon" width="20" height="20">
+                    <li class="socials__item">
+                        <a class="socials__link" href="">
+                            <svg class="socials__icon socials__icon--footer" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="action-form">
-                <div class="action-form-field">
-                    <label class="action-form-label" for="mail">Подпишитесь на рассылку</label>
-                    <input class="action-form-mail" type="email" name="mail" id="mail" placeholder="E-mail">
+            <form class="action-form" method="post">
+                <div class="action-form__field">
+                    <label class="action-form__label" for="mail">Подпишитесь на рассылку</label>
+                    <input class="action-form__mail" type="email" name="mail" id="mail" placeholder="E-mail">
                 </div>
-                <button class="action-form-btn bg-animation" type="submit">Подписаться</button>
-            </div>
+                <button class="action-form__button" type="submit">Подписаться</button>
+            </form>
         </div>
     </footer>
+
+    <!-- <script>
+        const { height: pageHeaderHeight } = document
+            .querySelector(".header")
+            .getBoundingClientRect();
+
+        document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script> -->
 </body>
 
 </html>
