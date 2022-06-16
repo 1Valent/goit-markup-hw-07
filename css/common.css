@@ -856,7 +856,7 @@ svg {
 
   width: 528px;
   height: 581px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255);
 
   transition: transform var(--transition-timing-function), opacity var(--transition-timing-function);
   visibility: var(--transition-timing-function);
@@ -1060,6 +1060,7 @@ svg {
 .agreements__label {
   display: flex;
   align-items: center;
+  padding-left: 13px;
 
   font-size: 14px;
   line-height: 1.71;
@@ -1077,14 +1078,14 @@ svg {
   display: inline-block;
   /* width: 15px;
   height: 15px; */
-  fill: transparent;
   border: 2px solid var(--main-text-color);
   border-radius: 4px;
+  fill: transparent;
   background-color: transparent;
   margin-right: 7px;
   transform: scale(1);
   transition: fill var(--transition-timing-function), border var(--transition-timing-function),
-    background-color var(--transition-timing-function);
+    background-color var(--transition-timing-function), transform var(--transition-timing-function);
 }
 
 .agreements__checkbox {
