@@ -807,6 +807,14 @@ svg {
   animation: changeIconPosition 2000ms ease;
 }
 
+.action-form__mail:not(:placeholder-shown):required:valid {
+  border-color: #4caf50;
+}
+
+.action-form__mail:not(:placeholder-shown):required:invalid {
+  border-color: #f44336;
+}
+
 /* backdrop */
 
 .backdrop {
