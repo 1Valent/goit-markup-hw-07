@@ -1,0 +1,47 @@
+.advantages {
+  @extend %section;
+  padding-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.advanteges__list {
+  @extend %list;
+  display: flex;
+}
+
+.advanteges__content:not(:first-child) {
+  margin-left: 30px;
+}
+
+.advanteges__box {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background: $teamBGC;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.advanteges__description {
+  width: 270px;
+  height: 130px;
+  padding-top: 30px;
+}
+
+.advantages__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantages__text {
+  color: $lowTextColor;
+  font-size: 14px;
+  line-height: 1.7;
+}

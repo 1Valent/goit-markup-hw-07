@@ -9,19 +9,17 @@
     <!-- Сначала шрифт, потом нормализатор -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <!-- Потом ваши стили -->
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body class="page">
     <!--шапка сайта-->
     <header class="header">
-        <div class="container header__container">
-            <a href="/index.html" lang="en" class="logo"><span class="logo__accent-word">Web</span>Studio</a>
+        <div class="header__container">
+            <a class="logo" href="/index.html" lang="en"><span class="logo__accent-word">Web</span>Studio</a>
             <nav class="navigation">
-                <ul class="list navigation__list">
+                <ul class="navigation__list">
                     <li class=" navigation__item"><a href="./index.html"
                             class="navigation__link navigation__link--current">Студия</a>
                     </li>
@@ -29,7 +27,7 @@
                     <li class=" navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="list contacts">
+            <ul class="contacts">
                 <li class=" contacts__item">
                     <a href="mailto:info@devstudio.com" target="_blank" class="contacts__link ">
                         <svg class="contacts__icon" width="16" height="12">
@@ -48,18 +46,18 @@
     <main>
         <!--Герой -->
         <section class="hero">
-            <div class="container hero__container">
+            <div class="hero__container">
                 <h1 class="hero__title"> <span class="hero__accent-word">Эффективные</span> решения для&nbsp;вашего
                     бизнеса </h1>
-                <button type="button" class="button hero__button" data-modal-open>
+                <button type="button" class="hero__button" data-modal-open>
                     Заказать услугу
                 </button>
             </div>
         </section>
         <!--преимущества -->
-        <section class="section advantages">
+        <section class="advantages">
             <div class="container">
-                <ul class="list advanteges__list">
+                <ul class="advanteges__list">
                     <li class="advanteges__content">
                         <div class="advanteges__box" aria-label="icon-antenna">
                             <span class="visually-hidden">
@@ -76,7 +74,7 @@
                                 позиции.</p>
                         </div>
                     </li>
-                    <li class=".advanteges__content">
+                    <li class="advanteges__content">
                         <div class="advanteges__box" aria-label=" icon-clock">
                             <span class="visually-hidden">
                                 icon-clock
@@ -93,7 +91,7 @@
                                 за собой.</p>
                         </div>
                     </li>
-                    <li class=".advanteges__content">
+                    <li class="advanteges__content">
                         <div class="advanteges__box" aria-label=" icon-diagram">
                             <span class="visually-hidden">
                                 icon-diagram
@@ -109,7 +107,7 @@
                                 обуславливает.</p>
                         </div>
                     </li>
-                    <li class=".advanteges__content">
+                    <li class="advanteges__content">
                         <div class="advanteges__box" aria-label="icon-astronaut">
                             <span class="visually-hidden">
                                 icon-astronaut
@@ -129,10 +127,10 @@
             </div>
         </section>
         <!--Чем мы занимаемся  -->
-        <section class="section activity">
-            <div class="container activity__container">
-                <h2 class=" activity__title">Чем мы занимаемся</h2>
-                <ul class="list activity__list">
+        <section class="activity">
+            <div class="activity__container">
+                <h2 class="activity__title">Чем мы занимаемся</h2>
+                <ul class="activity__list">
                     <li class="activity__box">
                         <img src="./images/activity/activity1.jpg" alt="Компьютер" />
                         <div class="activity__thumb">
@@ -155,7 +153,7 @@
             </div>
         </section>
         <!--Наша команда -->
-        <section class="section team">
+        <section class="team">
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
@@ -325,7 +323,7 @@
                 <ul class="our-client__list">
                     <li class="our-client__item">
                         <a class="our-client__link" href="">
-                            <svg class="our-client__icon svg-animation" width="106" height="60">
+                            <svg class="our-client__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-client-logo-1"></use>
                             </svg>
                         </a>
@@ -372,52 +370,53 @@
     </main>
     <!-- Футер -->
     <footer class="footer">
-        <div class="container footer__container">
-            <div class="adress footer__adress ">
+        <div class="footer__container">
+            <div class="adress">
                 <a href="/index.html" lang="en" class="adress__logo"><span class="logo__accent">Web</span>Studio</a>
-                <address class="adress__list">
-                    <ul class="list">
-                        <li class="adress__item"><a href="https://cutt.ly/HHQWCcf" rel="noopener noreferrer"
-                                target="_blank" class="adress adress__map">г.
+                <address class="adress__box">
+                    <ul class="adress__list">
+                        <li class="adress__item"><a class="adress__map" href="https://cutt.ly/HHQWCcf"
+                                rel="noopener noreferrer" target="_blank">г.
                                 Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="adress__item"><a href="mailto:info@devstudio.com" target="_blank" lang="en"
-                                class="adress">
+                        <li class="adress__item"><a class="adress__link" href="mailto:info@devstudio.com" target="_blank"
+                                lang="en">
                                 info&#64devstudio.com
                             </a></li>
-                        <li class="adress__item"><a href="tel:+380961111111" target="_blank" class="adress"> +38 096
+                        <li class="adress__item"><a class="adress__link" href="tel:+380961111111" target="_blank"> +38
+                                096
                                 111
                                 11
                                 11 </a></li>
                     </ul>
                 </address>
             </div>
-            <div class="socials footer__socials">
-                <h2 class="socials__title">присоединяйтесь</h2>
-                <ul class=" list socials__list">
-                    <li class="socials__item">
-                        <a class="socials__link" href="">
-                            <svg class="socials__icon socials__icon--footer" width="20" height="20">
+            <div class="subscribe">
+                <h2 class="subscribe__title">присоединяйтесь</h2>
+                <ul class="subscribe__list">
+                    <li class="subscribe__item">
+                        <a class="subscribe__link" href="">
+                            <svg class="subscribe__icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="socials__item">
-                        <a class="socials__link" href="">
-                            <svg class="socials__icon socials__icon--footer" width="20" height="20">
+                    <li class="subscribe__item">
+                        <a class="subscribe__link" href="">
+                            <svg class="subscribe__icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="socials__item">
-                        <a class="socials__link" href="">
-                            <svg class="socials__icon socials__icon--footer" width="20" height="20">
+                    <li class="subscribe__item">
+                        <a class="subscribe__link" href="">
+                            <svg class="subscribe__icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="socials__item">
-                        <a class="socials__link" href="">
-                            <svg class="socials__icon socials__icon--footer" width="20" height="20">
+                    <li class="subscribe__item">
+                        <a class="subscribe__link" href="">
+                            <svg class="subscribe__icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -485,9 +484,8 @@
                         <use href="./images/icons.svg#accept-icon"></use>
                     </svg>
                     <span class="agreements__word">Соглашаюсь</span>
-                    &nbsp;с рассылкой и принимаю <a href="https://www.instagram.com/1valent/" class="agreements__link"
-                        target="_blank">Условия
-                        договора</a>
+                    &nbsp;с рассылкой и принимаю<a href="https://www.instagram.com/1valent/" class="agreements__link"
+                        target="_blank">&nbsp;Условия договора</a>
                 </label>
             </div>
 
@@ -496,9 +494,9 @@
     </div>
     <!-- help-button -->
     <div class="help">
-        <a href="#" class="help__link">
+        <a href="" class="help__link">
             <div class="help__tip">
-                <b>А может лучше на завод&quest;&excl;</b>
+                А может лучше на завод&quest;&excl;
             </div>
         </a>
     </div>
