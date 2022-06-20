@@ -1,10 +1,12 @@
-@import './base/normalize';
 @import './utils/variables';
-@import './utils/vh';
 @import './utils/placeholders';
 @import './utils/mixins';
-@import './utils/reset';
 @import './utils/animation';
+@import './utils/common';
+
+@import './base/normalize';
+@import './base/fonts';
+
 @import './components/header';
 @import './components/work-buttons';
 @import './components/work-examples';
