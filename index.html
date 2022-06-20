@@ -6,10 +6,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <!-- Сначала шрифт, потом нормализатор -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
-    <!-- Потом ваши стили -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -17,7 +13,7 @@
     <!--шапка сайта-->
     <header class="header">
         <div class="header__container">
-            <a class="logo" href="/index.html" lang="en"><span class="logo__accent-word">Web</span>Studio</a>
+            <a class="logo" href="/index.html" lang="en"><span class="color-accent">Web</span>Studio</a>
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class=" navigation__item"><a href="./index.html"
@@ -57,33 +53,33 @@
         <!--преимущества -->
         <section class="advantages">
             <div class="container">
-                <ul class="advanteges__list">
-                    <li class="advanteges__content">
-                        <div class="advanteges__box" aria-label="icon-antenna">
+                <ul class="advantages__list">
+                    <li class="advantages__content">
+                        <div class="advantages__box" aria-label="icon-antenna">
                             <span class="visually-hidden">
                                 icon-antenna
                             </span>
-                            <svg class="advanteges__icon" width="70" height="70">
+                            <svg class="advantages__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <div class="advanteges__description">
+                        <div class="advantages__description">
                             <h3 class="advantages__title">Внимание к деталям</h3>
                             <p class="advantages__text">Идейные соображения, а также начало повседневной работы по
                                 формированию
                                 позиции.</p>
                         </div>
                     </li>
-                    <li class="advanteges__content">
-                        <div class="advanteges__box" aria-label=" icon-clock">
+                    <li class="advantages__content">
+                        <div class="advantages__box" aria-label=" icon-clock">
                             <span class="visually-hidden">
                                 icon-clock
                             </span>
-                            <svg class="advanteges__icon" width="70" height="70">
+                            <svg class="advantages__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <div class="advanteges__description">
+                        <div class="advantages__description">
                             <h3 class="advantages__title">Пунктуальность</h3>
                             <p class="advantages__text">Задача организации, в особенности же рамки и место обучения
                                 кадров
@@ -91,32 +87,32 @@
                                 за собой.</p>
                         </div>
                     </li>
-                    <li class="advanteges__content">
-                        <div class="advanteges__box" aria-label=" icon-diagram">
+                    <li class="advantages__content">
+                        <div class="advantages__box" aria-label=" icon-diagram">
                             <span class="visually-hidden">
                                 icon-diagram
                             </span>
-                            <svg class="advanteges__icon" width="70" height="70">
+                            <svg class="advantages__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <div class="advanteges__description">
+                        <div class="advantages__description">
                             <h3 class="advantages__title">Планирование</h3>
                             <p class="advantages__text">Равным образом консультация с широким активом в значительной
                                 степени
                                 обуславливает.</p>
                         </div>
                     </li>
-                    <li class="advanteges__content">
-                        <div class="advanteges__box" aria-label="icon-astronaut">
+                    <li class="advantages__content">
+                        <div class="advantages__box" aria-label="icon-astronaut">
                             <span class="visually-hidden">
                                 icon-astronaut
                             </span>
-                            <svg class="advanteges__icon" width="70" height="70">
+                            <svg class="advantages__icon" width="70" height="70">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <div class="advanteges__description">
+                        <div class="advantages__description">
                             <h3 class="advantages__title">Современные технологии</h3>
                             <p class="advantages__text">Значимость этих проблем настолько очевидна, что реализация
                                 плановых
@@ -163,7 +159,7 @@
                             <div class="team__description">
                                 <h3 class="team__sub-title">Игорь Демьяненко</h3>
                                 <p class="team__text" lang="en">Product Designer</p>
-                                <ul class="socials__list">
+                                <ul class="socials">
                                     <li class="socials__item">
                                         <a class="socials__link" href="">
                                             <svg class="socials__icon" width="20" height="20">
@@ -202,7 +198,7 @@
                             <div class="team__description">
                                 <h3 class="team__sub-title">Ольга Репина</h3>
                                 <p class="team__text" lang="en">Frontend Developer</p>
-                                <ul class="socials__list">
+                                <ul class="socials">
                                     <li class="socials__item">
                                         <a class="socials__link" href="">
                                             <svg class="socials__icon" width="20" height="20">
@@ -241,7 +237,7 @@
                             <div class="team__description">
                                 <h3 class="team__sub-title">Николай Тарасов</h3>
                                 <p class="team__text" lang="en">Marketing</p>
-                                <ul class="socials__list">
+                                <ul class="socials">
                                     <li class="socials__item">
                                         <a class="socials__link" href="">
                                             <svg class="socials__icon" width="20" height="20">
@@ -280,7 +276,7 @@
                             <div class="team__description">
                                 <h3 class="team__sub-title">Михаил Ермаков</h3>
                                 <p class="team__text" lang="en">UI Designer</p>
-                                <ul class="socials__list">
+                                <ul class="socials">
                                     <li class="socials__item">
                                         <a class="socials__link" href="">
                                             <svg class="socials__icon" width="20" height="20">
@@ -372,7 +368,7 @@
     <footer class="footer">
         <div class="footer__container">
             <div class="adress">
-                <a href="/index.html" lang="en" class="adress__logo"><span class="logo__accent">Web</span>Studio</a>
+                <a href="/index.html" lang="en" class="adress__logo"><span class="color-accent">Web</span>Studio</a>
                 <address class="adress__box">
                     <ul class="adress__list">
                         <li class="adress__item"><a class="adress__map" href="https://cutt.ly/HHQWCcf"
